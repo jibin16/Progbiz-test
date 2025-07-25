@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BioSynthesis - Smart Agriculture</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+  <style>
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      color: var(--text-color);
+      scroll-behavior: smooth;
+    }
+
+    h1{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+    }
+
+    h1 { font-size: 74px; }
+    h2 { font-size: 56px; }
+    h3 { font-size: 42px; }
+    h4 { font-size: 32px; }
+
+    .btn-primary {
+      background-color:  #000000;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .btn-primary:hover {
+      background-color: #498a52;
+    }
+
+    nav {
+      background-color: var(--secondary-color);
+    }
+
+    navbar-brand fw-bold {
+      color: rgb(0, 0, 0) !important;
+    }
+
+    nav a:hover {
+      color: var(--primary-color) !important;
+    }
+
+    footer {
+      background-color: var(--secondary-color);
+      color: white;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+    .badge {
+  display: inline-flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  color: #000000;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.05);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #2d7d4f; /* Dark green */
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg py-3 sticky-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      
+      <!-- Left: Logo -->
+      <a class="navbar-brand fw-bold font-size-60px" href="#">Biosynthesia</a>
+      
+      <!-- Center: Nav Links inside black pill -->
+      <div class="custom-nav-container d-flex align-items-center">
+        <ul class="navbar-nav flex-row mb-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        </ul>
+      </div>
+  
+      <!-- Right: Buttons -->
+      <div class="custom-buttons d-flex">
+        <a class="btn  me-2" href="#">Login</a>
+        <a class="btn btn-success" href="#">Sign Up Free</a>
+      </div>
+  
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <section id="home" class="section text-center text-white bg-white">
+    <div class="container" data-aos="fade-up">
+      <h4 class="badge" style="font-size: medium;"> <span class="dot"></span>Top Agro Researcher’s</h4>
+      <h1 class="my-4">Cultivating Next-Gen Growth in Agriculture</h1>
+      <h4 style="font-size: larger; opacity: 0.6;">Empowering farmers with smarter tools, <p>bigger yields, and greener solutions</p></h4>
+      <a href="#" class="btn btn-primary">Get Started</a>
+    </div><br><br>
+    <img style="width: 100%; height: 760px;" src="./images/banner-image.png" alt="">
+  </section>
+
+  <!-- About Section -->
+
+  <section class="agri-wrapper">
+    <div class="top-info">
+      <p class="year">2025</p>
+      <p style="font-size: 20px;" class="description">
+        At <span class="highlight" style="font-size: 20px;">BioSynthesis</span>, we’re growing a greener, smarter future for agriculture.
+        With innovative tools and sustainable solutions, we help farmers boost yields, cut waste, and protect the planet.
+        Together, we’re cultivating healthier crops, stronger communities, and a brighter tomorrow.
+      </p>
+    </div>
+  
+    <section class="agri-container">
+      <!-- Left Column -->
+      <div class="left-section">
+        <div class="card">
+          <img src="./images/iimage.png" alt="Organic Farm" />
+          <p>Organic Farm</p>
+        </div>
+        <div class="nav-buttons">
+          <button>&larr;</button>
+          <button>&rarr;</button>
+        </div>
+      </div>
+  
+      <!-- Center Column -->
+      <div class="center-section">
+        <div class="center-text">
+          <h2>Get<br>Started Now</h2>
+          <button class="arrow-btn">➜</button>
+        </div>
+        <div class="card">
+          <img src="./images/image (1).png" alt="Organic Fertilizer" />
+          <p>Organic Fertilizer</p>
+        </div>
+      </div>
+  
+      <!-- Right Column -->
+      <div class="right-section">
+        <div class="card">
+          <img src="./images/image (2).png" alt="Technology Irrigation" />
+          <p>Technology Irrigation</p>
+        </div>
+        <div class="card">
+          <img src="./images/image.png" alt="Agricultural Monitoring" />
+          <p>Agricultural Monitoring</p>
+        </div>
+      </div>
+    </section>
+  </section>
+  
+
+  <!-- Blog Section -->
+  <section class="green-hub-section">
+    <div class="hub-header">
+      <div class="hub-title">
+        <h2>The Green Growth Hub:<br>Innovation & Earthwise</h2>
+      </div>
+      <div class="hub-desc">
+        <p>
+          Insights, tips, and stories from the world of sustainable farming and
+          innovative agriculture — offering expert advice, real-world success
+          stories, and the latest trends to help farmers embrace smarter,
+          eco-friendly practices. From cutting-edge technology to time-tested
+          solutions, we’re here to inspire and guide you on the journey toward a
+          more sustainable, productive future.
+        </p>
+      </div>
+    </div>
+  
+    <div class="card-row">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="./images/Rectangle-3.png" alt="Farming Precision" />
+        <div class="card-content">
+          <h4>Farming Precision</h4>
+          <p>Optimize your fields, reduce waste, and boost yields with smart, precise farming solutions.</p>
+          <a href="#">Read more <span>→</span></a>
+        </div>
+      </div>
+  
+      <!-- Center Card (Wider) -->
+      <div class="card2 card-wide">
+        <img class="cimg" src="./images/Rectangle-5.png" alt="Crop Surveillance" />
+        <div class="card-content">
+          <h4 style="padding-left: 20px;">Crop Surveillance</h4>
+          <p>Monitor crop health in real-time with smart tools that detect issues early and protect your yield.</p>
+          <a href="#">Read more <span>→</span></a>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="./images/Rectangle-4.png" alt="Automated Farming" />
+        <div class="card-content">
+          <h4>Automated Farming</h4>
+          <p>Streamline your farm operations with smart automation for faster, easier, and more efficient growth.</p>
+          <a href="#">Read more <span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </section> <br><br><br>
+  
+  
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <div class="form-side">
+        <h2>We’d love to help</h2>
+        <p>
+          Streamline your farm operations with smart automation for faster, easier,
+          and more efficient growth.
+        </p>
+        <form>
+          <div class="form-row">
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+          </div>
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Message" rows="4"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <div class="image-side">
+        <img src="./images/Rectangle-6.png" alt="Waterfall Jungle" />
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="custom-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- Logo & Description -->
+        <div class="footer-brand">
+          <h3><span class="logo-icon">🟩</span> Biosynthesiē</h3>
+          <p>Monitor crop health in real-time with smart tools that detect issues early and protect your yield.</p>
+          <div class="footer-socials">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+        </div>
+  
+        <!-- Company -->
+        <div class="footer-links">
+          <h5>COMPANY</h5>
+          <ul>
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>About Us</li>
+            <li>Product</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+  
+        <!-- Resource -->
+        <div class="footer-links">
+          <h5>RESOURCE</h5>
+          <ul>
+            <li>Blog</li>
+            <li>Customer Stories</li>
+            <li>Info</li>
+            <li>Privacy Policy</li>
+            <li>Payments</li>
+          </ul>
+        </div>
+  
+        <!-- Career -->
+        <div class="footer-links">
+          <h5>CAREER</h5>
+          <ul>
+            <li>Jobs</li>
+            <li>Hiring</li>
+            <li>News</li>
+            <li>Tips & Tricks</li>
+          </ul>
+        </div>
+  
+        <!-- Help -->
+        <div class="footer-links">
+          <h5>HELP</h5>
+          <ul>
+            <li>FAQ</li>
+            <li>Help Center</li>
+            <li>Support</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Bottom text -->
+      <div class="footer-bottom">
+        <h1 class="footer-bg-text">REEP TO GROW</h1>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
