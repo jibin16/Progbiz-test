@@ -44,7 +44,6 @@ header, .hero, section {
 .agri-wrapper {
   padding: 40px 20px;
   width: 100%;
-  box-sizing: border-box;
 }
 
 .top-info {
@@ -53,6 +52,7 @@ header, .hero, section {
   align-items: flex-start;
   margin: 0 auto 40px auto;
   max-width: 1200px;
+  flex-wrap: wrap;
 }
 
 .year {
@@ -79,7 +79,7 @@ header, .hero, section {
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
-  width: 100%;
+  flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -91,7 +91,8 @@ header, .hero, section {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  flex: 1;
+  flex: 1 1 100%;
+  min-width: 300px;
 }
 
 .card {
@@ -143,6 +144,7 @@ header, .hero, section {
   text-decoration: underline;
   transform: translateX(2px);
 }
+
 .card img {
   width: 100%;
   height: auto;
@@ -201,6 +203,9 @@ header, .hero, section {
   background-color: #1a1a1a;
   border-radius: 40px;
   padding: 0.5rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .custom-nav-container .nav-link {
@@ -335,24 +340,23 @@ header, .hero, section {
 }
 
 .contact-section {
-  padding: 6rem 4rem;
+  padding: 6rem 2rem;
   background: #ffffff;
 }
 
 .contact-container {
   display: flex;
+  flex-wrap: wrap;
   max-width: 1700px;
   margin: 0 auto;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-  flex-wrap: wrap;
 }
 
 .form-side {
-  flex: 1;
+  flex: 1 1 300px;
   padding: 2rem;
-  min-width: 300px;
   background: #f4f4f4;
   display: flex;
   flex-direction: column;
@@ -419,9 +423,8 @@ button:hover {
 }
 
 .image-side {
-  flex: 1;
-  min-width: 300px;
-  height: 100%;
+  flex: 1 1 300px;
+  height: auto;
 }
 
 .image-side img {
@@ -439,7 +442,6 @@ button:hover {
   position: relative;
   overflow: hidden;
 }
-
 
 .input-hover {
   transition: all 0.3s ease;
@@ -463,7 +465,6 @@ button:hover {
   object-fit: cover;
   height: 100%;
 }
-
 
 .footer-container {
   max-width: 1200px;
@@ -573,21 +574,26 @@ button:hover {
     align-items: center;
   }
 
-  .cta-text {
-    top: 60px;
-    left: 30px;
-  }
-
-  .cta-text h4 {
-    font-size: 2rem;
-  }
-
-  .cta-text p {
-    font-size: 1.2rem;
-  }
-
   .card-gallery {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .center-text {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .custom-nav-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .image-side img {
+    border-radius: 0 0 16px 16px;
   }
 }
 
@@ -599,17 +605,6 @@ button:hover {
 
   .navbar-brand {
     font-size: 1.5rem;
-  }
-
-  .custom-nav-container {
-    flex-direction: column;
-    gap: 10px;
-    padding: 1rem;
-  }
-
-  .cta-text {
-    top: 40px;
-    left: 20px;
   }
 
   .cta-text h4 {
