@@ -175,86 +175,120 @@
       </div>
     </section>
   </section>
+
+  <div style="position: relative;">
+    <img src="./images/Cta-banner.png" alt="Banner Image" style="width: 100%; height: auto; max-height: 900px; object-fit: cover;">
+    
+    <h4 style="
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      max-width: 80%;
+      line-height: 1.4;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    ">
+      Transform Your Farm. <br> Empower Your Future.
+    </h4>
+  </div>
   
 
   <!-- Blog Section -->
-  <section class="green-hub-section">
-    <div class="hub-header">
-      <div class="hub-title">
-        <h2>The Green Growth Hub:<br>Innovation & Earthwise</h2>
-      </div>
-      <div class="hub-desc">
-        <p>
-          Insights, tips, and stories from the world of sustainable farming and
-          innovative agriculture — offering expert advice, real-world success
-          stories, and the latest trends to help farmers embrace smarter,
-          eco-friendly practices. From cutting-edge technology to time-tested
-          solutions, we’re here to inspire and guide you on the journey toward a
-          more sustainable, productive future.
-        </p>
-      </div>
-    </div>
-  
-    <div class="card-row">
-      <!-- Card 1 -->
-      <div class="card">
-        <img src="./images/Rectangle-3.png" alt="Farming Precision" />
-        <div class="card-content">
-          <h4>Farming Precision</h4>
-          <p>Optimize your fields, reduce waste, and boost yields with smart, precise farming solutions.</p>
-          <a href="#">Read more <span>→</span></a>
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row mb-5 align-items-center">
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold">The Green Growth Hub: <br />Innovation & Earthwise</h1>
+        </div>
+        <div class="col-lg-6">
+          <p class="lead text-muted">
+            Insights, tips, and stories from the world of sustainable farming and innovative agriculture — offering expert advice, real-world success stories, and the latest trends to help farmers embrace smarter, eco-friendly practices. From cutting-edge technology to time-tested solutions, we’re here to inspire and guide you on the journey toward a more sustainable, productive future.
+          </p>
         </div>
       </div>
-  
-      <!-- Center Card (Wider) -->
-      <div class="card2 card-wide">
-        <img class="cimg" src="./images/Rectangle-5.png" alt="Crop Surveillance" />
-        <div class="card-content">
-          <h4 style="padding-left: 20px;">Crop Surveillance</h4>
-          <p>Monitor crop health in real-time with smart tools that detect issues early and protect your yield.</p>
-          <a href="#">Read more <span>→</span></a>
-        </div>
-      </div>
-  
-      <!-- Card 3 -->
-      <div class="card">
-        <img src="./images/Rectangle-4.png" alt="Automated Farming" />
-        <div class="card-content">
-          <h4>Automated Farming</h4>
-          <p>Streamline your farm operations with smart automation for faster, easier, and more efficient growth.</p>
-          <a href="#">Read more <span>→</span></a>
-        </div>
-      </div>
-    </div>
-  </section> <br><br><br>
-  
-  
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <div class="contact-container">
-      <div class="form-side">
-        <h2>We’d love to help</h2>
-        <p>
-          Streamline your farm operations with smart automation for faster, easier,
-          and more efficient growth.
-        </p>
-        <form>
-          <div class="form-row">
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
+      <div class="row g-5 align-items-start">
+
+        <!-- Farming Precision -->
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img src="images/Rectangle-3.png" alt="Farming Precision" class="img-fluid rounded-4 mb-3" />
+            <h5>Farming Precision</h5>
+            <p>Optimize your fields, reduce waste, and boost yields with smart, precise farming solutions.</p>
+            <a href="#" class="read-more">Read more →</a>
           </div>
-          <input type="email" placeholder="Email" />
-          <textarea placeholder="Message" rows="4"></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </div>
-      <div class="image-side">
-        <img src="./images/Rectangle-6.png" alt="Waterfall Jungle" />
+        </div>
+
+        <!-- Crop Surveillance -->
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img src="images/Rectangle-4.png" alt="Crop Surveillance" class="img-fluid rounded-4 mb-3" />
+            <h5>Crop Surveillance</h5>
+            <p>Monitor crop health in real-time with smart tools that detect issues early and protect your yield.</p>
+            <a href="#" class="read-more">Read more →</a>
+          </div>
+        </div>
+
+        <!-- Automated Farming -->
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img src="images/Rectangle-5.png" alt="Automated Farming" class="img-fluid rounded-4 mb-3" />
+            <h5>Automated Farming</h5>
+            <p>Streamline your farm operations with smart automation for faster, easier, and more efficient growth.</p>
+            <a href="#" class="read-more">Read more →</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
+
   
+<section class="contact-section py-5">
+  <div class="container">
+    <div class="row g-4 align-items-center rounded-4 overflow-hidden shadow-sm bg-white">
+
+      <!-- Left: Form -->
+      <div class="col-lg-6 bg-light p-5">
+        <h2 class="mb-3 fw-bold">We‘d love to help</h2>
+        <p class="text-muted mb-4">Streamline your farm operations with smart automation for faster, easier, and more efficient growth.</p>
+
+        <form>
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <label for="firstName" class="form-label small">First Name</label>
+              <input type="text" class="form-control rounded-pill input-hover" id="firstName" />
+            </div>
+            <div class="col-md-6">
+              <label for="lastName" class="form-label small">Last Name</label>
+              <input type="text" class="form-control rounded-pill input-hover" id="lastName" />
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label small">Email</label>
+            <input type="email" class="form-control rounded-pill input-hover" id="email" />
+          </div>
+
+          <div class="mb-4">
+            <label for="message" class="form-label small">Message</label>
+            <textarea class="form-control rounded-4 input-hover" id="message" rows="4"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-dark w-100 rounded-pill py-2 shadow-sm btn-animate">Send</button>
+        </form>
+      </div>
+
+      <!-- Right: Image -->
+      <div class="col-lg-6 d-none d-lg-block p-0">
+        <img src="images/Rectangle-6.png" alt="Nature" class="img-fluid w-100 h-100 object-fit-cover rounded-end-4" />
+      </div>
+
+    </div>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="custom-footer">
